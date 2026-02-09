@@ -14,7 +14,7 @@ const footerLinks = {
     { href: "/blog", label: "Blog & Insights" },
     { href: "/services#cybersecurity", label: "Cybersecurity" },
     // { href: "/services#iot", label: "IoT Solutions" },
-    { href: "/services#development", label: "Web Development" },
+    { href: "/services#development", label: "Software Development" },
   ],
 };
 
@@ -146,7 +146,6 @@ export function Footer() {
                 <MapPin size={16} className="text-primary mt-0.5 shrink-0" />
                 <span className="text-sm text-text-secondary">
                   {COMPANY.address}<br />
-                  {COMPANY.city}, {COMPANY.state} {COMPANY.zip}
                 </span>
               </li>
             </ul>
