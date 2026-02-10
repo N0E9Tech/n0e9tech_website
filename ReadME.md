@@ -19,8 +19,8 @@ N0E9Tech is a technology solutions provider specializing in cybersecurity, IoT s
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/n0e9tech/website.git
-   cd website
+   git clone https://github.com/n0e9tech/n0e9tech_website.git
+   cd n0e9tech_website
    ```
 2. **Install dependencies:**
    ```bash
