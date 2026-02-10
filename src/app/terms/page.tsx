@@ -79,7 +79,15 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold text-text-primary mb-3"> </h2>
+              <h2 className="text-lg font-semibold text-text-primary mb-3">
+                6. Changes to Terms
+              </h2>
+              <p>
+                We may update these Terms of Service from time to time. Changes
+                will be posted on this page with an updated revision date.
+                Continued use of our website after changes constitutes
+                acceptance of the revised terms.
+              </p>
             </div>
 
             <div>

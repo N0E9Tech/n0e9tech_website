@@ -151,7 +151,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-primary mt-0.5 shrink-0" />
                 <span className="text-sm text-text-secondary">
-                  {COMPANY.address}<br />
+                  {COMPANY.address}
                 </span>
               </li>
             </ul>
@@ -190,6 +190,9 @@ export function Footer() {
         <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <p className="text-xs text-text-muted">
             © {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
+          </p>
+          <p className="text-xs text-text-muted">
+          Made with ❤️ by N0E9Tech
           </p>
           <div className="flex gap-6">
             <Link

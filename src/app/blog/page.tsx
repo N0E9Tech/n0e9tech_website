@@ -7,31 +7,31 @@ import { Section, SectionHeader, BlogCard, GradientCTA } from "@/components/ui";
    Replace with real articles as content is published. */
 const posts = [
   {
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            excerpt:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.",
-            category:"Cybersecurity",
-            author:"N0E9Tech Team",
-            date:"Jan 07, 2026",
-            readTime:"5 min read",
-            slug:"startup-security-mindset"
+    title: "Why Every Startup Needs a Security Mindset from Day One",
+    excerpt: "Most startups treat security as an afterthought. Here's why baking it in from the beginning saves time, money, and reputation.",
+    category: "Cybersecurity",
+    author: "N0E9Tech Team",
+    date: "Jan 07, 2026",
+    readTime: "5 min read",
+    slug: "startup-security-mindset",
   },
   {
-   title:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            excerpt:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.",
-            category:"IoT & Embedded",
-            author:"N0E9Tech Team",
-            date:"Jan 15, 2026",
-            readTime:"6 min read",
-            slug:"raspberry-pi-production"
+    title: "Taking Raspberry Pi from Prototype to Production",
+    excerpt: "Lessons learned deploying Raspberry Pi-based IoT solutions in real-world environments — from sensor networks to edge computing.",
+    category: "IoT & Embedded",
+    author: "N0E9Tech Team",
+    date: "Jan 15, 2026",
+    readTime: "6 min read",
+    slug: "raspberry-pi-production",
   },
   {
-     title:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            excerpt:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.",
-            category:"Web Development",
-            author:"N0E9Tech Team",
-            date:"Jan 21, 2026",
-            readTime:"6 min read",
-            slug:"choosing-mvp-tech-stack"
+    title: "Choosing the Right Tech Stack for Your MVP",
+    excerpt: "A practical guide to selecting frameworks, languages, and infrastructure that let you ship fast without accumulating tech debt.",
+    category: "Web Development",
+    author: "N0E9Tech Team",
+    date: "Jan 21, 2026",
+    readTime: "6 min read",
+    slug: "choosing-mvp-tech-stack",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function BlogPage() {
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-base text-text-secondary lg:text-lg leading-relaxed animate-fade-in-up delay-200">
             {/* PLACEHOLDER: Update intro text as real articles are published */}
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.
+            Technical guides, case studies, and insights on cybersecurity, IoT, and modern software development.
           </p>
         </div>
       </section>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Section, Button } from "@/components/ui";
-import { COMPANY } from "@/lib/constants";
+import { COMPANY, subjects } from "@/lib/constants";
 import {
   Mail,
   Phone,
@@ -13,13 +13,6 @@ import {
   ArrowRight,
   Calendar,
 } from "lucide-react";
-
-const subjects = [
-  "Cybersecurity Assessment",
-  "IoT / Raspberry Pi Project",
-  "Web or Mobile Development",
-  "General Inquiry",
-];
 
 const contactInfo = [
   {
@@ -101,7 +94,7 @@ export default function ContactPage() {
 
       {/* ===== CONTACT INFO CARDS ===== */}
       <Section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5 mb-16">
           {contactInfo.map((item) => (
             <div
               key={item.label}

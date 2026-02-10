@@ -27,7 +27,7 @@ export const COMPANY = {
   name: "N0E9Tech",
   email: "ntprocs@n0e9tech.com",
   phone: "+977-9871234567",
-  address: "New Baneswor,Kathamandu",
+  address: "New Baneswor, Kathmandu",
   country: "Nepal",
   zip: "42006",
 } as const;
@@ -68,9 +68,9 @@ export const team = [
   },
     {
     name: "Sujan Bomjan Tamang",
-    role: "AI/ML Developer(Beginner)",
+    role: "AI/ML Developer (Beginner)",
     bio: "Early‑career AI/ML developer building foundational skills in machine learning, data preprocessing, and model deployment. Focused on practical projects and continuous learning.",
-    specialties: ["Python", "basic ML models"],
+    specialties: ["Python", "Basic ML Models"],
   },
 ] as const;
 

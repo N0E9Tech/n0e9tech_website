@@ -4,9 +4,6 @@ import {
   SectionHeader,
   FeatureCard,
   ServiceCard,
-  ProjectCard,
-  TestimonialCard,
-  StatCard,
   BlogCard,
   Button,
   GradientCTA,
@@ -16,7 +13,6 @@ import {
   ShieldCheck,
   Cpu,
   Code,
-  Lock,
   Globe,
   BarChart,
   Shield,
@@ -60,14 +56,14 @@ export default function Home() {
               </div>
 
               <h1 className="mt-6 text-4xl font-extrabold text-text-primary sm:text-5xl lg:text-[3.5rem] xl:text-6xl leading-[1.08] tracking-tight animate-fade-in-up delay-100">
-                Lorem —{" "}
-                <span className="text-gradient-primary ">ipsum dolor.</span>
+                Secure Systems.{" "}
+                <span className="text-gradient-primary">Smart Solutions.</span>
               </h1>
 
               <p className="mt-6 text-lg text-text-secondary leading-relaxed max-w-xl animate-fade-in-up delay-200">
                 We&apos;re a startup team passionate about
                 cybersecurity, IoT, and modern software. Whether you need a
-                Cyber Services, a secure web & app — we build it right from day one.
+                security assessment, a secure web app, or an IoT prototype — we build it right from day one.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
@@ -138,11 +134,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Metric rows */}
-                  
-                     
-                      
-                    </div>
                   </div>
                 </div>
 
@@ -162,6 +153,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
 
         {/* Bottom fade */}
         <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-bg-dark to-transparent" />
@@ -172,7 +164,7 @@ export default function Home() {
         <SectionHeader
           label="What We Offer"
           title="Technology Solutions Built for the Real World"
-          subtitle="We bring together cybersecurity and  full-stack development to help businesses launch, protect, and scale their technology."
+          subtitle="We bring together cybersecurity and full-stack development to help businesses launch, protect, and scale their technology."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <FeatureCard
@@ -182,8 +174,8 @@ export default function Home() {
           />
           <FeatureCard
             icon={Cpu}
-            title="IoT & Embedded System"
-            description="Raspberry Pi and embedded systems solutions"
+            title="IoT & Embedded Systems"
+            description="Raspberry Pi and embedded systems solutions — from sensor networks and edge computing to custom hardware prototypes for real-world automation."
           />
           <FeatureCard
             icon={Code}
@@ -265,7 +257,7 @@ export default function Home() {
           title="Three Pillars. One Mission. Your Growth."
           subtitle="Whether you need to secure your infrastructure, prototype an IoT device, launch a digital product, or modernize your IT — we’re ready to build."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <ServiceCard
             icon={Shield}
             title="Cybersecurity Solutions"
@@ -274,8 +266,8 @@ export default function Home() {
           />
           <ServiceCard
             icon={Cpu}
-            title="IOT "
-            description="lorem epsum dolor"
+            title="IoT & Embedded Systems"
+            description="Custom embedded solutions, edge computing platforms, and secure IoT deployments powered by Raspberry Pi and beyond."
             href="/services#iot"
           />
           <ServiceCard
@@ -291,13 +283,13 @@ export default function Home() {
       <Section>
         <SectionHeader
           label="Insights"
-          title="Blogs "
+          title="From Our Blog"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* PLACEHOLDER: Dummy blog cards */}
           <BlogCard
-           title= "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente."
+            title="Why Every Startup Needs a Security Mindset from Day One"
+            excerpt="Most startups treat security as an afterthought. Here's why baking it in from the beginning saves time, money, and reputation."
             category="Cybersecurity"
             author="N0E9Tech Team"
             date="Jan 07, 2026"
@@ -305,8 +297,8 @@ export default function Home() {
             slug="startup-security-mindset"
           />
           <BlogCard
-             title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente."
+            title="Taking Raspberry Pi from Prototype to Production"
+            excerpt="Lessons learned deploying Raspberry Pi-based IoT solutions in real-world environments — from sensor networks to edge computing."
             category="IoT & Embedded"
             author="N0E9Tech Team"
             date="Jan 15, 2026"
@@ -314,8 +306,8 @@ export default function Home() {
             slug="raspberry-pi-production"
           />
           <BlogCard
-            title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente."
+            title="Choosing the Right Tech Stack for Your MVP"
+            excerpt="A practical guide to selecting frameworks, languages, and infrastructure that let you ship fast without accumulating tech debt."
             category="Web Development"
             author="N0E9Tech Team"
             date="Jan 21, 2026"
@@ -342,7 +334,7 @@ export default function Home() {
       {/* ===== CONTACT PREVIEW ===== */}
       <Section>
         <SectionHeader label="Get in Touch" title="Contact Us" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
           {[
             {
               icon: Mail,
@@ -388,44 +380,5 @@ export default function Home() {
   );
 }
 
-function StructuredData() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "N0E9Tech",
-    url: "https://n0e9tech.com",
-    logo: "https://n0e9tech.com/logo.png",
-    description: "Expert cybersecurity, IoT, and software development solutions",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "NP", 
-    },
-    sameAs: [
-      "https://twitter.com/n0e9tech",
-      "https://github.com/n0e9tech",
-      "https://linkedin.com/company/n0e9tech",
-    ],
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "Customer Service",
-      email: "ntprocs@n0e9tech.com",
-    },
-  }
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  )
-}
-
-export function HomePage() {
-  return (
-    <>
-      <StructuredData />
-      {/* ...rest of your home page */}
-    </>
-  )
-}
 

@@ -27,19 +27,19 @@ const values = [
     icon: Shield,
     title: "Integrity First",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.",
+      "We do the right thing even when no one is watching. Every recommendation is based on what's best for you, not what's easiest for us.",
   },
   {
     icon: Eye,
     title: "Radical Transparency",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.",
+      "No hidden fees, no black-box deliverables. You see our process, our progress, and our reasoning at every step.",
   },
   {
     icon: Heart,
     title: "Outcomes Over Hours",
     description:
-      "We measure success by the results we create for you,not by hours billed or reports generated.",
+      "We measure success by the results we create for you, not by hours billed or reports generated.",
   },
   {
     icon: BookOpen,
@@ -97,7 +97,7 @@ export default function AboutPage() {
           label="Our Values"
           title="Principles That Guide Every Decision"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
           {values.map((value, index) => (
             <div
               key={value.title}

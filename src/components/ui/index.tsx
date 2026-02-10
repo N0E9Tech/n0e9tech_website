@@ -407,7 +407,7 @@ export function Button({
   );
 }
 
-// Graditent_CTA
+// GradientCTA
 
 interface GradientCTAProps {
   title: string;
