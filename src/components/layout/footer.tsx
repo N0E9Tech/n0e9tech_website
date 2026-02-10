@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin, Shield } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 import Image from "next/image";
 

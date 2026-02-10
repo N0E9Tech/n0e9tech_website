@@ -8,23 +8,19 @@ import {
   Button,
   GradientCTA,
 } from "@/components/ui";
-import { COMPANY, STATS } from "@/lib/constants";
+import { COMPANY } from "@/lib/constants";
 import {
   ShieldCheck,
   Cpu,
   Code,
   Globe,
-  BarChart,
   Shield,
   Smartphone,
-  Settings,
   Mail,
   Phone,
   MapPin,
   ArrowRight,
   CheckCircle,
-  Zap,
-  Server,
 } from "lucide-react";
 
 export default function Home() {
@@ -40,9 +36,9 @@ export default function Home() {
         {/* Decorative orbs */}
         <div className="absolute top-1/4 -left-32 h-[500px] w-[500px] rounded-full bg-primary/[0.04] blur-3xl" />
         <div className="absolute bottom-1/4 -right-32 h-[400px] w-[400px] rounded-full bg-accent/[0.03] blur-3xl" />
-        <div className="absolute top-20 right-1/4 h-2 w-2 rounded-full bg-primary/40 animate-float" />
-        <div className="absolute bottom-40 left-1/3 h-1.5 w-1.5 rounded-full bg-accent/40 animate-float delay-300" />
-        <div className="absolute top-1/3 right-1/3 h-1 w-1 rounded-full bg-primary/30 animate-float delay-600" />
+        <div className="absolute top-20 right-1/4 h-2 w-2 rounded-full bg-primary/40 animate-float will-change-transform" />
+        <div className="absolute bottom-40 left-1/3 h-1.5 w-1.5 rounded-full bg-accent/40 animate-float delay-300 will-change-transform" />
+        <div className="absolute top-1/3 right-1/3 h-1 w-1 rounded-full bg-primary/30 animate-float delay-600 will-change-transform" />
 
         <div className="relative mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-20 lg:py-0 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -138,13 +134,13 @@ export default function Home() {
                 </div>
 
                 {/* Floating badges */}
-                <div className="absolute -top-4 -left-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float">
+                <div className="absolute -top-4 -left-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float will-change-transform">
                   <div className="flex items-center gap-2">
                     <ShieldCheck size={16} className="text-accent" />
                     <span className="text-xs font-semibold text-text-primary">Protected</span>
                   </div>
                 </div>
-                <div className="absolute -bottom-4 -right-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float delay-300">
+                <div className="absolute -bottom-4 -right-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float delay-300 will-change-transform">
                   <div className="flex items-center gap-2">
                     <Globe size={16} className="text-primary" />
                     <span className="text-xs font-semibold text-text-primary">Edge Ready</span>
