@@ -10,8 +10,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/projects", label: "Projects" },
-  { href: "/reviews", label: "Reviews" },
+  // { href: "/projects", label: "Projects" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
@@ -73,12 +72,12 @@ export function Navbar() {
             className="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
             aria-label="N0E9Tech — Home"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/30 transition-all duration-300 group-hover:ring-primary/60 group-hover:bg-primary/15">
+             <div className="flex items-center justify-center transition-all duration-300 group-hover:bg-primary/15">
               <Image
                 src="/logo.png"
                 alt="N0E9Tech Logo"
-                width={18}
-                height={18}
+                width={30}
+                height={30}
               />
             </div>
             <span className="text-lg font-bold text-text-primary tracking-tight">

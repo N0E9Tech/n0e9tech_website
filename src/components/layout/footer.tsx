@@ -1,17 +1,18 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin, Shield } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
+import Image from "next/image";
+
 
 const footerLinks = {
   company: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
-    { href: "/projects", label: "Projects" },
-    { href: "/reviews", label: "Reviews" },
+    { href: "/blog", label: "Blog & Insights" },
+    // { href: "/projects", label: "Projects" },
   ],
   resources: [
-    { href: "/blog", label: "Blog & Insights" },
+
     { href: "/services#cybersecurity", label: "Cybersecurity" },
     // { href: "/services#iot", label: "IoT Solutions" },
     { href: "/services#development", label: "Software Development" },
@@ -29,16 +30,21 @@ export function Footer() {
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1 space-y-5">
             <Link href="/" className="group inline-flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/30 transition-all duration-300 group-hover:ring-primary/60">
-                <Shield size={18} className="text-primary" />
+              <div className="flex items-center justify-center transition-all duration-300 group-hover:bg-primary/15">
+                 <Image
+                                src="/logo.png"
+                                alt="N0E9Tech Logo"
+                                width={30}
+                                height={30}
+                              />
               </div>
               <span className="text-lg font-bold text-text-primary tracking-tight">
-                Cyber<span className="text-primary">Pi</span>{" "}
-                <span className="text-text-secondary font-medium">Labs</span>
+                N0<span className="text-primary">E9</span>{" "}
+                <span className="text-text-secondary font-medium">Tech</span>
               </span>
             </Link>
             <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
-              Securing Innovation — From Edge to Enterprise. Cybersecurity, IoT
+             Cybersecurity, IoT
               engineering, and software development.
             </p>
             <div className="flex gap-3">
@@ -160,7 +166,7 @@ export function Footer() {
                 Stay ahead of the curve
               </p>
               <p className="text-xs text-text-muted">
-                Monthly insights on cybersecurity, IoT.
+                Monthly insights on cybersecurity, IoT and Software Development.
               </p>
             </div>
             <form className="flex gap-2 max-w-sm w-full md:w-auto">
