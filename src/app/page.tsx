@@ -387,3 +387,45 @@ export default function Home() {
     </>
   );
 }
+
+function StructuredData() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "N0E9Tech",
+    url: "https://n0e9tech.com",
+    logo: "https://n0e9tech.com/logo.png",
+    description: "Expert cybersecurity, IoT, and software development solutions",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "NP", 
+    },
+    sameAs: [
+      "https://twitter.com/n0e9tech",
+      "https://github.com/n0e9tech",
+      "https://linkedin.com/company/n0e9tech",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "Customer Service",
+      email: "ntprocs@n0e9tech.com",
+    },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  )
+}
+
+export function HomePage() {
+  return (
+    <>
+      <StructuredData />
+      {/* ...rest of your home page */}
+    </>
+  )
+}
+

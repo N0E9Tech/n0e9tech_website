@@ -1,5 +1,28 @@
 // Consists of Company Contact Information or Other Static data that could be used across the websites
 
+export const siteConfig = {
+  name: "N0E9Tech",
+  shortName: "N0E9",
+  description:
+    "Expert cybersecurity, IoT, and software development solutions. We build secure, scalable systems for modern businesses.",
+  url: "https://n0e9tech.com",
+  ogImage: "/logo.png",
+  links: {
+    twitter: "https://twitter.com/n0e9tech",
+    github: "https://github.com/yn0e9tech",
+    linkedin: "https://linkedin.com/company/n0e9tech",
+  },
+  keywords: [
+    "cybersecurity",
+    "IoT solutions",
+    "web development",
+    "Raspberry Pi",
+    "network security",
+    "embedded systems",
+    "Next.js development",
+  ] as string[],
+};
+
 export const COMPANY = {
   name: "N0E9Tech",
   email: "ntprocs@n0e9tech.com",
