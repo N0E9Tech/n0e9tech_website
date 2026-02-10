@@ -5,8 +5,7 @@ export const COMPANY = {
   email: "ntprocs@n0e9tech.com",
   phone: "+977-9871234567",
   address: "New Baneswor,Kathamandu",
-  city: "Kathmandu",
-  state: "Bagmati",
+  country: "Nepal",
   zip: "42006",
 } as const;
 
@@ -50,4 +49,11 @@ export const team = [
     bio: "Early‑career AI/ML developer building foundational skills in machine learning, data preprocessing, and model deployment. Focused on practical projects and continuous learning.",
     specialties: ["Python", "basic ML models"],
   },
+] as const;
+
+export const subjects = [
+  "Cybersecurity Assessment",
+  "IoT / Raspberry Pi Project",
+  "Web or Mobile Development",
+  "General Inquiry",
 ] as const;
