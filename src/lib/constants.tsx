@@ -1,10 +1,33 @@
 // Consists of Company Contact Information or Other Static data that could be used across the websites
 
+export const siteConfig = {
+  name: "N0E9Tech",
+  shortName: "N0E9",
+  description:
+    "Expert cybersecurity, IoT, and software development solutions. We build secure, scalable systems for modern businesses.",
+  url: "https://n0e9tech.com",
+  ogImage: "/logo.png",
+  links: {
+    twitter: "https://twitter.com/n0e9tech",
+    github: "https://github.com/yn0e9tech",
+    linkedin: "https://linkedin.com/company/n0e9tech",
+  },
+  keywords: [
+    "cybersecurity",
+    "IoT solutions",
+    "web development",
+    "Raspberry Pi",
+    "network security",
+    "embedded systems",
+    "Next.js development",
+  ] as string[],
+};
+
 export const COMPANY = {
   name: "N0E9Tech",
   email: "ntprocs@n0e9tech.com",
   phone: "+977-9871234567",
-  address: "New Baneswor,Kathamandu",
+  address: "New Baneswor, Kathmandu",
   country: "Nepal",
   zip: "42006",
 } as const;
@@ -45,9 +68,9 @@ export const team = [
   },
     {
     name: "Sujan Bomjan Tamang",
-    role: "AI/ML Developer(Beginner)",
+    role: "AI/ML Developer (Beginner)",
     bio: "Early‑career AI/ML developer building foundational skills in machine learning, data preprocessing, and model deployment. Focused on practical projects and continuous learning.",
-    specialties: ["Python", "basic ML models"],
+    specialties: ["Python", "Basic ML Models"],
   },
 ] as const;
 

@@ -113,10 +113,10 @@
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translateY(-12px);
+    transform: translate3d(0, -12px, 0);
   }
 }
 
@@ -228,12 +228,14 @@
   background: rgba(17, 24, 39, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  will-change: backdrop-filter;
 }
 
 .glass-strong {
   background: rgba(17, 24, 39, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  will-change: backdrop-filter;
 }
 
 /* Card Style */
@@ -283,6 +285,12 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Content containment for below-fold sections */
+section + section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
 }
 
 ::selection {

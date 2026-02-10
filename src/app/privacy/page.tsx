@@ -92,10 +92,10 @@ export default function PrivacyPage() {
               <p>
                 For privacy-related inquiries, please reach out to us at{" "}
                 <a
-                  href="mailto:info@cyberpilabs.com"
+                  href="mailto:ntprocs@n0e9tech.com"
                   className="text-primary hover:underline"
                 >
-                  info@cyberpilabs.com
+                  ntprocs@n0e9tech.com
                 </a>{" "}
                 or visit our{" "}
                 <a href="/contact" className="text-primary hover:underline">
