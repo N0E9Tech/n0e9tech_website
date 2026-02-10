@@ -1,6 +1,5 @@
 # N0E9Tech Website
 
-[https://n0e9tech.com](https://n0e9tech.com)
 [https://n0e9tech.com](https://n0e9tech-site-prjct.vercel.app/)
 
 ## 📋 Overview
