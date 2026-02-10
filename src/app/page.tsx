@@ -251,7 +251,7 @@ export default function Home() {
               <div className="rounded-xl bg-bg-card border border-border p-5 text-center">
                 <Code size={28} className="text-primary mx-auto mb-2" />
                 <p className="text-lg font-bold text-text-primary">Software</p>
-                <p className="text-xs text-text-muted">Full-Stack</p>
+                <p className="text-xs text-text-muted">Web & App</p>
               </div>
             </div>
           </div>
@@ -296,8 +296,8 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* PLACEHOLDER: Dummy blog cards */}
           <BlogCard
-            title="Why Every Startup Needs a Security-First Mindset"
-            excerpt="Security isn’t just for enterprises. We explore why startups should bake security into their DNA from the very beginning."
+           title= "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente."
             category="Cybersecurity"
             author="N0E9Tech Team"
             date="Jan 07, 2026"
@@ -305,17 +305,17 @@ export default function Home() {
             slug="startup-security-mindset"
           />
           <BlogCard
-            title="Raspberry Pi in Production: What You Need to Know"
-            excerpt="Taking a Pi prototype to production requires careful engineering. Here’s what we’ve learned building reliable embedded systems."
+             title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente."
             category="IoT & Embedded"
             author="N0E9Tech Team"
-            date="Coming Soon"
-            readTime="Jan 15, 2026"
+            date="Jan 15, 2026"
+            readTime="6 min read"
             slug="raspberry-pi-production"
           />
           <BlogCard
-            title="Choosing the Right Tech Stack for Your MVP"
-            excerpt="Next.js, React, Node.js, or something else? A practical guide to choosing technologies that grow with your product."
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente."
             category="Web Development"
             author="N0E9Tech Team"
             date="Jan 21, 2026"

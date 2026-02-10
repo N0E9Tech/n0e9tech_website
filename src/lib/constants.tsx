@@ -36,7 +36,7 @@ export const team = [
     name: "Aashish Adhikari",
     role: "Backend Developer",
     bio: "Builds reliable, scalable server‑side systems and APIs with strong attention to security, performance, and maintainability.",
-    specialties: ["REST APIs", "databases", "Node.js"],
+    specialties: ["REST APIs",  "Node.js"],
   },
     {
     name: "Samip",
