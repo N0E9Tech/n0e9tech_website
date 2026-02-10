@@ -59,7 +59,7 @@ export default function Home() {
               <p className="mt-6 text-lg text-text-secondary leading-relaxed max-w-xl animate-fade-in-up delay-200">
                 We&apos;re a startup team passionate about
                 cybersecurity, IoT, and modern software. Whether you need a
-                security assessment, a secure web app, or an IoT prototype — we build it right from day one.
+                security assessment or a secure web app, we build it right from day one.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             {/* Right — Visual element */}
-            <div className="hidden lg:block animate-fade-in-right delay-300">
+            <div className="animate-fade-in-right delay-300">
               <div className="relative">
                 {/* Central card */}
                 <div className="relative rounded-2xl border border-border/60 bg-bg-card/50 backdrop-blur-sm p-8 shadow-2xl shadow-primary/5">

@@ -51,7 +51,7 @@ export const team = [
   {
     name: "Sijan Bhusal",
     role: "Web & App Developer",
-    bio: "Builds modern web and mobile applications with a focus on performance, accessibility, and scalable architecture.",
+    bio: "Exploring web and mobile development, with an emphasis on performant, accessible, and scalable apps",
     specialties: ["React/Next.js", "Flutter"],
   },
   {
@@ -61,14 +61,14 @@ export const team = [
     specialties: ["REST APIs",  "Node.js"],
   },
     {
-    name: "Samip",
-    role: "Software Developer",
+    name: "Samip Aryal",
+    role: "Full Stack Developer",
     bio: "Full-stack developer with expertise in Next.js, React, and Node.js. Focused on building clean, performant web applications and APIs.",
     specialties: ["React/Next.js", "Nodejs"],
   },
     {
     name: "Sujan Bomjan Tamang",
-    role: "AI/ML Developer (Beginner)",
+    role: "AI/ML Developer",
     bio: "Early‑career AI/ML developer building foundational skills in machine learning, data preprocessing, and model deployment. Focused on practical projects and continuous learning.",
     specialties: ["Python", "Basic ML Models"],
   },
