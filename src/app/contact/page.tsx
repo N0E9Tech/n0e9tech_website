@@ -108,7 +108,7 @@ export default function ContactPage() {
               </p>
               {item.href ? (
                 <a
-                  href={item.href}
+                  href={item.href}F
                   className="text-sm text-primary hover:text-primary-light transition-colors"
                 >
                   {item.value}
@@ -311,45 +311,9 @@ export default function ContactPage() {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Quick Call CTA */}
-            <div className="rounded-xl border border-border bg-bg-card p-6 lg:p-8">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 ring-1 ring-accent/20">
-                <Calendar size={22} className="text-accent" />
-              </div>
-              <h3 className="text-lg font-semibold text-text-primary mb-2">
-                Prefer a Quick Call?
-              </h3>
-              <p className="text-sm text-text-secondary leading-relaxed mb-4">
-                Sometimes a 15-minute conversation is worth more than a hundred
-                emails. You&apos;ll talk directly with our founder — no gatekeepers.
-              </p>
-              <Button href="#" variant="secondary" size="sm">
-                Schedule a Call
-                <ArrowRight size={14} />
-              </Button>
-            </div>
+            
 
-            {/* Response time */}
-            <div className="rounded-xl border border-border bg-bg-card p-6 lg:p-8">
-              <h3 className="text-base font-semibold text-text-primary mb-4">
-                What to Expect
-              </h3>
-              <ul className="space-y-3">
-                {[
-                  "Response within 1 business day",
-                  "Free initial consultation",
-                  "No-obligation project estimate",
-                  "Direct access to the founder",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2.5 text-sm text-text-secondary"
-                  >
-                    <CheckCircle size={14} className="shrink-0 text-accent" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          
 
             
           </div>
