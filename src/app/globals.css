@@ -2,6 +2,7 @@
 
 /* Website design style and color palletes */
 
+/* stylelint-disable-next-line at-rule-no-unknown */
 @theme inline {
   /* Primary */
   --color-primary: #0ea5e9;
@@ -16,8 +17,8 @@
 
   /* Backgrounds */
   --color-bg-dark: #0b1120;
-  --color-bg-card: #111827;
-  --color-bg-elevated: #1f2937;
+  --color-bg-card: #0b1120;
+  --color-bg-elevated: #0f172a;
 
   /* Borders */
   --color-border: #374151;

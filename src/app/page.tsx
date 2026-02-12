@@ -29,13 +29,13 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background layers */}
-        <div className="absolute inset-0 bg-gradient-to-br from-bg-dark via-[#0c1629] to-[#0f1d32]" />
+        <div className="absolute inset-0 bg-linear-to-br from-bg-dark via-[#0c1629] to-[#0f1d32]" />
         <div className="absolute inset-0 bg-grid-pattern opacity-40" />
         <div className="absolute inset-0 bg-radial-glow" />
 
         {/* Decorative orbs */}
-        <div className="absolute top-1/4 -left-32 h-[500px] w-[500px] rounded-full bg-primary/[0.04] blur-3xl" />
-        <div className="absolute bottom-1/4 -right-32 h-[400px] w-[400px] rounded-full bg-accent/[0.03] blur-3xl" />
+        <div className="absolute top-1/4 -left-32 h-125 w-500 rounded-full bg-primary/0.04 blur-3xl" />
+        <div className="absolute bottom-1/4 -right-32 h-400 w-400 rounded-full bg-accent/0.03 blur-3xl" />
         <div className="absolute top-20 right-1/4 h-2 w-2 rounded-full bg-primary/40 animate-float will-change-transform" />
         <div className="absolute bottom-40 left-1/3 h-1.5 w-1.5 rounded-full bg-accent/40 animate-float delay-300 will-change-transform" />
         <div className="absolute top-1/3 right-1/3 h-1 w-1 rounded-full bg-primary/30 animate-float delay-600 will-change-transform" />
@@ -46,12 +46,12 @@ export default function Home() {
             <div className="max-w-2xl">
               <div className="animate-fade-in">
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary sm:text-sm">
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse-glow" />
+                  <span className="h-1 w-1.5 rounded bg-primary animate-pulse-glow" />
                   Cybersecurity · IoT · Software
                 </span>
               </div>
 
-              <h1 className="mt-6 text-4xl font-extrabold text-text-primary sm:text-5xl lg:text-[3.5rem] xl:text-6xl leading-[1.08] tracking-tight animate-fade-in-up delay-100">
+              <h1 className="mt-6 text-3xl font-bold text-text-primary sm:text-4xl lg:text-[3.5rem] xl:text-5xl leading-[1.08] tracking-tight animate-fade-in-up delay-100">
                 Secure Systems.{" "}
                 <span className="text-gradient-primary">Smart Solutions.</span>
               </h1>
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
 
               {/* Trust indicators */}
-              <div className="mt-10 flex flex-wrap items-center gap-6 text-xs text-text-muted animate-fade-in delay-500">
+              <div className="mt-10 flex flex-wrap items-center gap-6 text-xs text-text-muted adnimate-fade-in delay-500">
                 <span className="flex items-center gap-1.5">
                   <CheckCircle size={14} className="text-accent" />
                   Security-First Approach
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="relative">
                 {/* Central card */}
                 <div className="relative rounded-2xl border border-border/60 bg-bg-card/50 backdrop-blur-sm p-8 shadow-2xl shadow-primary/5">
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
+                  <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
                   <div className="relative space-y-6">
                     {/* Terminal Header */}
                     <div className="flex items-center gap-2 pb-4 border-b border-border/40">
@@ -152,7 +152,7 @@ export default function Home() {
         </div>
 
         {/* Bottom fade */}
-        <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-bg-dark to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-32 bg-linear-to-t from-bg-dark to-transparent" />
       </section>
 
       {/* ===== FEATURES ===== */}
@@ -223,7 +223,7 @@ export default function Home() {
           </div>
 
           {/* Visual */}
-          <div className="relative rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-bg-dark to-accent/5 p-8 lg:p-12">
+          <div className="relative rounded-2xl border border-border bg-linear-to-br from-primary/5 via-bg-dark to-accent/5 p-8 lg:p-12">
             <div className="absolute inset-0 rounded-2xl bg-dot-pattern opacity-30" />
             <div className="relative grid grid-cols-2 gap-4">
               <div className="rounded-xl bg-bg-card border border-border p-5 text-center">
