@@ -132,7 +132,7 @@ export default function AboutPage() {
             >
               {/* Avatar */}
               <div className="mb-5 flex items-center gap-4">
-                <div className="h-14 w-14 shrink-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 ring-2 ring-border flex items-center justify-center transition-all group-hover:ring-primary/40">
+                <div className="h-14 w-14 shrink-0 rounded-full bg-linear-to-br from-primary/20 to-accent/20 ring-2 ring-border flex items-center justify-center transition-all group-hover:ring-primary/40">
                   <span className="text-lg font-bold text-primary">
                     {member.name
                       .split(" ")

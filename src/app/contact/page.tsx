@@ -70,7 +70,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20 lg:pt-40 lg:pb-24 bg-gradient-to-b from-bg-dark via-bg-dark to-bg-card">
+      <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20 lg:pt-40 lg:pb-24 bg-linear-to-b from-bg-dark via-bg-dark to-bg-card">
         <div className="absolute inset-0 bg-grid-pattern opacity-60" />
         <div className="absolute inset-0 bg-radial-glow" />
         <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
