@@ -31,9 +31,9 @@ const values = [
   },
   {
     icon: Eye,
-    title: "Radical Transparency",
+    title: "Transparency",
     description:
-      "No hidden fees, no black-box deliverables. You see our process, our progress, and our reasoning at every step.",
+      "No hidden fees, detailed system deliverables. You see our process, our progress, and our reasoning at every step.",
   },
   {
     icon: Heart,
@@ -45,7 +45,7 @@ const values = [
     icon: BookOpen,
     title: "Always Learning",
     description:
-      "Technology evolves daily. So do we. Our team invests in certifications, research, and open-source contributions to stay sharp.",
+      "Technology evolves daily. So your needs. Our team researchs about new technology, and their essentials to fulfill your needs .",
   },
 ];
 
@@ -74,7 +74,8 @@ export default function AboutPage() {
               Our Mission
             </h3>
             <p className="text-text-secondary leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.
+              To provide technology solutions that enhance the productivity and satisfaction of our clients through reliable and user-friendly IT services.
+               
             </p>
           </div>
           <div className="group rounded-xl border border-border bg-bg-dark p-8 transition-all duration-300 hover:border-accent/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.06)]">
@@ -85,7 +86,7 @@ export default function AboutPage() {
               Our Vision
             </h3>
             <p className="text-text-secondary leading-relaxed">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate iure laudantium molestiae dolore sapiente.
+                 To create innovative, secure, connected software, hardware platforms and IoT solutions that empower businesses and improve everyday life.
             </p>
           </div>
         </div>
