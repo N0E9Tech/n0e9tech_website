@@ -108,7 +108,7 @@ export default function ContactPage() {
               </p>
               {item.href ? (
                 <a
-                  href={item.href}F
+                  href={item.href}
                   className="text-sm text-primary hover:text-primary-light transition-colors"
                 >
                   {item.value}
@@ -312,13 +312,19 @@ export default function ContactPage() {
           <div className="space-y-6">
             {/* Quick Call CTA */}
             
-
-          
-
+              <div className="w-full h-full min-h-[400px] rounded-xl overflow-hidden border border-white/10 bg-zinc-900">
+  <iframe
+    width="100%"
+    height="100%"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=85.3330%2C27.6880%2C85.3450%2C27.6980&layer=mapnik&marker=27.6930%2C85.3390"
+    className="invert-[90%] hue-rotate-180 brightness-95 contrast-90 grayscale-[30%]"
+    style={{ border: 0 }}
+  ></iframe>
+</div>
             
           </div>
         </div>
       </Section>
     </>
   );
-}
+          }
