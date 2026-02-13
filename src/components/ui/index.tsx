@@ -105,7 +105,7 @@ export function FeatureCard({
   return (
     <div className="card-glow group rounded-xl border border-border bg-bg-card p-6 lg:p-8 3xl:p-10 4xl:p-12 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] hover:-translate-y-1">
       <div className="mb-5 inline-flex h-12 w-12 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/40 group-hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]">
-        <Icon size={22} className="text-primary 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7" />
+        <Icon className="text-primary w-5 h-5 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7" />
       </div>
       <h3 className="mb-2 text-lg 3xl:text-xl 4xl:text-2xl font-semibold text-text-primary">{title}</h3>
       <p className="text-sm 3xl:text-base 4xl:text-lg text-text-secondary leading-relaxed">
@@ -133,7 +133,7 @@ export function ServiceCard({
   return (
     <div className="card-glow group rounded-xl border border-border bg-bg-card p-6 lg:p-8 3xl:p-10 4xl:p-12 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] hover:-translate-y-1">
       <div className="mb-5 inline-flex h-12 w-12 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/40">
-        <Icon size={22} className="text-primary 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7" />
+        <Icon className="text-primary w-5 h-5 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7" />
       </div>
       <h3 className="mb-2 text-lg 3xl:text-xl 4xl:text-2xl font-semibold text-text-primary">{title}</h3>
       <p className="mb-5 text-sm 3xl:text-base 4xl:text-lg text-text-secondary leading-relaxed">
@@ -144,7 +144,7 @@ export function ServiceCard({
         className="inline-flex items-center gap-1.5 text-sm 3xl:text-base 4xl:text-lg font-medium text-primary transition-all duration-200 hover:gap-2.5 group-hover:text-primary-light"
       >
         Learn More
-        <ArrowRight size={16} className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+        <ArrowRight className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
       </Link>
     </div>
   );
@@ -441,7 +441,7 @@ export function GradientCTA({
             className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 3xl:px-8 3xl:py-4 4xl:px-10 4xl:py-5 text-sm 3xl:text-base 4xl:text-lg font-semibold text-primary transition-all duration-300 hover:bg-gray-100 hover:scale-[1.02] active:scale-[0.98] shadow-lg"
           >
             {buttonText}
-            <ArrowRight size={16} className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+            <ArrowRight className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
           </Link>
         </div>
       </div>

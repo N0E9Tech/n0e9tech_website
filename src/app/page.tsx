@@ -65,7 +65,7 @@ export default function Home() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
                 <Button href="/contact" size="lg">
                   Let&apos;s Talk
-                  <ArrowRight size={18} className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+                  <ArrowRight className="w-[18px] h-[18px] 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
                 </Button>
                 <Button href="/services" variant="secondary" size="lg">
                   See What We Do
@@ -75,11 +75,11 @@ export default function Home() {
               {/* Trust indicators */}
               <div className="mt-10 flex flex-wrap items-center gap-6 text-xs 3xl:text-sm 4xl:text-base text-text-muted adnimate-fade-in delay-500">
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle size={14} className="text-accent 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
+                  <CheckCircle className="text-accent w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                   Security-First Approach
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle size={14} className="text-accent 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
+                  <CheckCircle className="text-accent w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                   Startup Agility
                 </span>
               </div>
@@ -111,15 +111,15 @@ export default function Home() {
                         </div>
                         <div className="pl-4 space-y-1">
                           <div className="flex items-center gap-2">
-                            <Shield size={14} className="text-primary 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
+                            <Shield className="text-primary w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                             <span className="text-text-secondary">1. Cybersecurity Solutions</span>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Code size={14} className="text-primary 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
+                            <Code className="text-primary w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                             <span className="text-text-secondary">2. Software Development</span>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Cpu size={14} className="text-primary 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
+                            <Cpu className="text-primary w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                             <span className="text-text-secondary">3. IoT & Embedded Systems</span>
                           </div>
                         </div>
@@ -136,13 +136,13 @@ export default function Home() {
                 {/* Floating badges */}
                 <div className="absolute -top-4 -left-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 3xl:px-5 3xl:py-3 4xl:px-6 4xl:py-4 shadow-lg animate-float will-change-transform">
                   <div className="flex items-center gap-2">
-                    <ShieldCheck size={16} className="text-accent 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+                    <ShieldCheck className="text-accent w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
                     <span className="text-xs 3xl:text-sm 4xl:text-base font-semibold text-text-primary">Protected</span>
                   </div>
                 </div>
                 <div className="absolute -bottom-4 -right-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 3xl:px-5 3xl:py-3 4xl:px-6 4xl:py-4 shadow-lg animate-float delay-300 will-change-transform">
                   <div className="flex items-center gap-2">
-                    <Globe size={16} className="text-primary 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+                    <Globe className="text-primary w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
                     <span className="text-xs 3xl:text-sm 4xl:text-base font-semibold text-text-primary">Edge Ready</span>
                   </div>
                 </div>
@@ -211,14 +211,14 @@ export default function Home() {
                   key={item}
                   className="flex items-center gap-3 text-sm 3xl:text-base 4xl:text-lg text-text-secondary"
                 >
-                  <CheckCircle size={16} className="text-accent shrink-0 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+                  <CheckCircle className="text-accent shrink-0 w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
                   {item}
                 </li>
               ))}
             </ul>
             <Button href="/about" variant="secondary">
               Learn More About Us
-              <ArrowRight size={16} className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+              <ArrowRight className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
             </Button>
           </div>
 
@@ -227,17 +227,17 @@ export default function Home() {
             <div className="absolute inset-0 rounded-2xl bg-dot-pattern opacity-30" />
             <div className="relative grid grid-cols-2 gap-4 3xl:gap-6 4xl:gap-8">
               <div className="rounded-xl bg-bg-card border border-border p-5 3xl:p-6 4xl:p-8 text-center">
-                <Shield size={28} className="text-primary mx-auto mb-2 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
+                <Shield className="text-primary mx-auto mb-2 w-7 h-7 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
                 <p className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary">Security</p>
                 <p className="text-xs 3xl:text-sm 4xl:text-base text-text-muted">Offense-Informed</p>
               </div>
               <div className="rounded-xl bg-bg-card border border-border p-5 3xl:p-6 4xl:p-8 text-center">
-                <Cpu size={28} className="text-accent mx-auto mb-2 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
+                <Cpu className="text-accent mx-auto mb-2 w-7 h-7 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
                 <p className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary">IoT</p>
                 <p className="text-xs 3xl:text-sm 4xl:text-base text-text-muted">Embedded System</p>
               </div>
               <div className="rounded-xl bg-bg-card border border-border p-5 3xl:p-6 4xl:p-8 text-center">
-                <Code size={28} className="text-primary mx-auto mb-2 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
+                <Code className="text-primary mx-auto mb-2 w-7 h-7 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
                 <p className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary">Software</p>
                 <p className="text-xs 3xl:text-sm 4xl:text-base text-text-muted">Web & App</p>
               </div>
@@ -355,7 +355,7 @@ export default function Home() {
               className="group text-center rounded-xl border border-border bg-bg-card p-6 3xl:p-8 4xl:p-10 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(14,165,233,0.06)]"
             >
               <div className="mb-3 inline-flex h-12 w-12 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 transition-all group-hover:ring-primary/40">
-                <item.icon size={22} className="text-primary 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7" />
+                <item.icon className="text-primary w-5 h-5 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7" />
               </div>
               <p className="text-sm 3xl:text-base 4xl:text-lg font-medium text-text-primary mb-1">{item.label}</p>
               {item.href ? (
