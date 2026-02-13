@@ -25,7 +25,7 @@ export function Footer() {
       {/* Subtle top glow */}
       <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
-      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-12 lg:py-16">
+      <div className="mx-auto max-w-7xl 3xl:max-w-8xl 4xl:max-w-9xl px-4 md:px-6 lg:px-8 3xl:px-12 4xl:px-16 py-12 lg:py-16 3xl:py-20 4xl:py-24">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1 space-y-5">
@@ -38,12 +38,12 @@ export function Footer() {
                                 height={30}
                               />
               </div>
-              <span className="text-lg font-bold text-text-primary tracking-tight">
+              <span className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary tracking-tight">
                 N0<span className="text-primary">E9</span>{" "}
                 <span className="text-text-secondary font-medium">Tech</span>
               </span>
             </Link>
-            <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
+            <p className="text-sm 3xl:text-base 4xl:text-lg text-text-secondary leading-relaxed max-w-xs">
              Cybersecurity, IoT
               engineering, and software development.
             </p>
