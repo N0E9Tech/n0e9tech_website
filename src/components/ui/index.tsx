@@ -301,25 +301,25 @@ export function BlogCard({
     <Link href={`/blog/${slug}`} className="block h-full">
       <article className="card-glow group rounded-xl border border-border bg-bg-card overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] hover:-translate-y-1 flex flex-col h-full">
         {/* Visual header */}
-        <div className={`relative h-48 bg-gradient-to-br ${gradient} flex items-center justify-center overflow-hidden`}>
+        <div className={`relative h-48 3xl:h-56 4xl:h-64 bg-gradient-to-br ${gradient} flex items-center justify-center overflow-hidden`}>
           <div className="absolute inset-0 bg-grid-pattern opacity-50" />
-          <div className="relative h-12 w-12 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center ring-1 ring-white/20 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
-            <span className="text-xs font-bold text-text-primary uppercase">{category.slice(0, 3)}</span>
+          <div className="relative h-12 w-12 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center ring-1 ring-white/20 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+            <span className="text-xs 3xl:text-sm 4xl:text-base font-bold text-text-primary uppercase">{category.slice(0, 3)}</span>
           </div>
         </div>
-        <div className="flex flex-1 flex-col p-6">
-          <span className="mb-3 inline-block self-start rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+        <div className="flex flex-1 flex-col p-6 3xl:p-8 4xl:p-10">
+          <span className="mb-3 inline-block self-start rounded-full bg-primary/10 px-3 py-1 3xl:px-4 3xl:py-1.5 text-xs 3xl:text-sm font-semibold text-primary">
             {category}
           </span>
-          <h3 className="mb-2 text-lg font-bold text-text-primary leading-snug group-hover:text-primary transition-colors duration-200 line-clamp-2">
+          <h3 className="mb-2 text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary leading-snug group-hover:text-primary transition-colors duration-200 line-clamp-2">
             {title}
           </h3>
-          <p className="mb-4 flex-1 text-sm text-text-secondary leading-relaxed line-clamp-3">
+          <p className="mb-4 flex-1 text-sm 3xl:text-base 4xl:text-lg text-text-secondary leading-relaxed line-clamp-3">
             {excerpt}
           </p>
-          <div className="flex items-center gap-3 text-xs text-text-muted border-t border-border pt-4">
-            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10">
-              <span className="text-[10px] font-bold text-primary">
+          <div className="flex items-center gap-3 text-xs 3xl:text-sm text-text-muted border-t border-border pt-4">
+            <div className="flex h-6 w-6 3xl:h-7 3xl:w-7 4xl:h-8 4xl:w-8 items-center justify-center rounded-full bg-primary/10">
+              <span className="text-[10px] 3xl:text-xs 4xl:text-sm font-bold text-primary">
                 {author.split(" ").map((n) => n[0]).join("")}
               </span>
             </div>

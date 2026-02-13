@@ -162,7 +162,7 @@ export default function Home() {
           title="Technology Solutions Built for the Real World"
           subtitle="We bring together cybersecurity and full-stack development to help businesses launch, protect, and scale their technology."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           <FeatureCard
             icon={ShieldCheck}
             title="Threat-Resilient Security"
@@ -253,7 +253,7 @@ export default function Home() {
           title="Three Pillars. One Mission. Your Growth."
           subtitle="Whether you need to secure your infrastructure, prototype an IoT device, launch a digital product, or modernize your IT — we’re ready to build."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           <ServiceCard
             icon={Shield}
             title="Cybersecurity Solutions"
@@ -281,7 +281,7 @@ export default function Home() {
           label="Insights"
           title="From Our Blog"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           {/* PLACEHOLDER: Dummy blog cards */}
           <BlogCard
             title="Why Every Startup Needs a Security Mindset from Day One"
