@@ -192,16 +192,16 @@ export default function ServicesPage() {
               {service.description}
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-4 lg:gap-5 3xl:gap-6 4xl:gap-8 mb-10">
               {service.offerings.map((offering, offIndex) => (
                 <div
                   key={offering.title}
-                  className={`card-glow group rounded-xl border border-border bg-bg-dark p-5 lg:p-6 transition-all duration-300 hover:border-primary/30 animate-fade-in-up delay-${(offIndex + 1) * 100}`}
+                  className={`card-glow group rounded-xl border border-border bg-bg-dark p-5 lg:p-6 3xl:p-7 4xl:p-8 transition-all duration-300 hover:border-primary/30 animate-fade-in-up delay-${(offIndex + 1) * 100}`}
                 >
-                  <h4 className="text-sm font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                  <h4 className="text-sm 3xl:text-base 4xl:text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
                     {offering.title}
                   </h4>
-                  <p className="text-sm text-text-secondary leading-relaxed">
+                  <p className="text-sm 3xl:text-base 4xl:text-lg text-text-secondary leading-relaxed">
                     {offering.description}
                   </p>
                 </div>
@@ -223,11 +223,11 @@ export default function ServicesPage() {
           title="Our Engagement Process"
           subtitle="Every project follows a lean, structured methodology designed for clarity, quality, and fast delivery — no bureaucratic overhead."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           {process.map((step, index) => (
             <div
               key={step.step}
-              className="card-glow group relative rounded-xl border border-border bg-bg-dark p-6 lg:p-8 transition-all duration-300 hover:border-primary/30"
+              className="card-glow group relative rounded-xl border border-border bg-bg-dark p-6 lg:p-8 3xl:p-10 4xl:p-12 transition-all duration-300 hover:border-primary/30"
             >
               {/* Step number watermark */}
               <span className="absolute top-4 right-4 text-4xl font-extrabold text-primary/[0.08]">

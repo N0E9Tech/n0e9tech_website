@@ -69,11 +69,11 @@ export function Navbar() {
       }`}
     >
       <nav
-        className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8"
+        className="mx-auto max-w-7xl 3xl:max-w-8xl 4xl:max-w-9xl px-4 md:px-6 lg:px-8 3xl:px-12 4xl:px-16"
         role="navigation"
         aria-label="Main navigation"
       >
-        <div className="flex h-16 items-center justify-between lg:h-20">
+        <div className="flex h-16 items-center justify-between lg:h-20 3xl:h-24 4xl:h-28">
           {/* Logo */}
           <Link
             href="/"
@@ -89,7 +89,7 @@ export function Navbar() {
                 priority
               />
             </div>
-            <span className="text-lg font-bold text-text-primary tracking-tight">
+            <span className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary tracking-tight">
               N0<span className="text-primary">E9</span>{" "}
               <span className="text-text-secondary font-medium">Tech</span>
             </span>
@@ -101,7 +101,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative px-3.5 py-2 text-sm font-medium transition-colors duration-200 rounded-md ${
+                className={`relative px-3.5 py-2 3xl:px-4 3xl:py-2.5 text-sm 3xl:text-base 4xl:text-lg font-medium transition-colors duration-200 rounded-md ${
                   isActive(link.href)
                     ? "text-primary"
                     : "text-text-secondary hover:text-text-primary hover:bg-bg-elevated/50"
@@ -120,7 +120,7 @@ export function Navbar() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-dark hover:shadow-primary/40 hover:scale-[1.02] active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 3xl:px-6 3xl:py-3 4xl:px-7 4xl:py-3.5 text-sm 3xl:text-base 4xl:text-lg font-medium text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-dark hover:shadow-primary/40 hover:scale-[1.02] active:scale-[0.98]"
             >
               Get Started
               <ArrowRight size={16} />

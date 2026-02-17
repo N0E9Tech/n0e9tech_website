@@ -34,29 +34,29 @@ export default function Home() {
         <div className="absolute inset-0 bg-radial-glow" />
 
         {/* Decorative orbs */}
-        <div className="absolute top-1/4 -left-32 h-125 w-500 rounded-full bg-primary/0.04 blur-3xl" />
-        <div className="absolute bottom-1/4 -right-32 h-400 w-400 rounded-full bg-accent/0.03 blur-3xl" />
-        <div className="absolute top-20 right-1/4 h-2 w-2 rounded-full bg-primary/40 animate-float will-change-transform" />
-        <div className="absolute bottom-40 left-1/3 h-1.5 w-1.5 rounded-full bg-accent/40 animate-float delay-300 will-change-transform" />
-        <div className="absolute top-1/3 right-1/3 h-1 w-1 rounded-full bg-primary/30 animate-float delay-600 will-change-transform" />
+        <div className="absolute top-1/4 -left-32 h-125 w-500 3xl:h-144 3xl:w-144 4xl:h-192 4xl:w-192 rounded-full bg-primary/0.04 blur-3xl" />
+        <div className="absolute bottom-1/4 -right-32 h-400 w-400 3xl:h-128 3xl:w-128 4xl:h-160 4xl:w-160 rounded-full bg-accent/0.03 blur-3xl" />
+        <div className="absolute top-20 right-1/4 h-2 w-2 3xl:h-3 3xl:w-3 4xl:h-4 4xl:w-4 rounded-full bg-primary/40 animate-float will-change-transform" />
+        <div className="absolute bottom-40 left-1/3 h-1.5 w-1.5 3xl:h-2.5 3xl:w-2.5 4xl:h-3.5 4xl:w-3.5 rounded-full bg-accent/40 animate-float delay-300 will-change-transform" />
+        <div className="absolute top-1/3 right-1/3 h-1 w-1 3xl:h-2 3xl:w-2 4xl:h-3 4xl:w-3 rounded-full bg-primary/30 animate-float delay-600 will-change-transform" />
 
-        <div className="relative mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-20 lg:py-0 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="relative mx-auto max-w-7xl 3xl:max-w-8xl 4xl:max-w-9xl px-4 md:px-6 lg:px-8 3xl:px-12 4xl:px-16 py-20 lg:py-0 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 3xl:gap-20 4xl:gap-24 items-center">
             {/* Left — Content */}
-            <div className="max-w-2xl">
+            <div className="max-w-2xl 3xl:max-w-3xl 4xl:max-w-4xl">
               <div className="animate-fade-in">
-                <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary sm:text-sm">
-                  <span className="h-1 w-1.5 rounded bg-primary animate-pulse-glow" />
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 3xl:px-5 3xl:py-2 4xl:px-6 4xl:py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary sm:text-sm 3xl:text-base">
+                  <span className="h-1 w-1.5 3xl:h-1.5 3xl:w-2 rounded bg-primary animate-pulse-glow" />
                   Cybersecurity · IoT · Software
                 </span>
               </div>
 
-              <h1 className="mt-6 text-3xl font-bold text-text-primary sm:text-4xl lg:text-[3.5rem] xl:text-5xl leading-[1.08] tracking-tight animate-fade-in-up delay-100">
+              <h1 className="mt-6 text-3xl font-bold text-text-primary sm:text-4xl lg:text-[3.5rem] xl:text-5xl 3xl:text-6xl 4xl:text-7xl leading-[1.08] tracking-tight animate-fade-in-up delay-100">
                 Secure Systems.{" "}
                 <span className="text-gradient-primary">Smart Solutions.</span>
               </h1>
 
-              <p className="mt-6 text-lg text-text-secondary leading-relaxed max-w-xl animate-fade-in-up delay-200">
+              <p className="mt-6 text-lg 3xl:text-xl 4xl:text-2xl text-text-secondary leading-relaxed max-w-xl 3xl:max-w-2xl 4xl:max-w-3xl animate-fade-in-up delay-200">
                 We&apos;re a startup team passionate about
                 cybersecurity, IoT, and modern software. Whether you need a
                 security assessment or a secure web app, we build it right from day one.
@@ -65,7 +65,7 @@ export default function Home() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
                 <Button href="/contact" size="lg">
                   Let&apos;s Talk
-                  <ArrowRight size={18} />
+                  <ArrowRight className="w-[18px] h-[18px] 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
                 </Button>
                 <Button href="/services" variant="secondary" size="lg">
                   See What We Do
@@ -73,13 +73,13 @@ export default function Home() {
               </div>
 
               {/* Trust indicators */}
-              <div className="mt-10 flex flex-wrap items-center gap-6 text-xs text-text-muted adnimate-fade-in delay-500">
+              <div className="mt-10 flex flex-wrap items-center gap-6 text-xs 3xl:text-sm 4xl:text-base text-text-muted adnimate-fade-in delay-500">
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle size={14} className="text-accent" />
+                  <CheckCircle className="text-accent w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                   Security-First Approach
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle size={14} className="text-accent" />
+                  <CheckCircle className="text-accent w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                   Startup Agility
                 </span>
               </div>
@@ -89,21 +89,21 @@ export default function Home() {
             <div className="animate-fade-in-right delay-300">
               <div className="relative">
                 {/* Central card */}
-                <div className="relative rounded-2xl border border-border/60 bg-bg-card/50 backdrop-blur-sm p-8 shadow-2xl shadow-primary/5">
+                <div className="relative rounded-2xl border border-border/60 bg-bg-card/50 backdrop-blur-sm p-8 3xl:p-10 4xl:p-12 shadow-2xl shadow-primary/5">
                   <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
                   <div className="relative space-y-6">
                     {/* Terminal Header */}
                     <div className="flex items-center gap-2 pb-4 border-b border-border/40">
                       <div className="flex gap-1.5">
-                        <div className="h-3 w-3 rounded-full bg-red-500/80" />
-                        <div className="h-3 w-3 rounded-full bg-yellow-500/80" />
-                        <div className="h-3 w-3 rounded-full bg-green-500/80" />
+                        <div className="h-3 w-3 3xl:h-4 3xl:w-4 rounded-full bg-red-500/80" />
+                        <div className="h-3 w-3 3xl:h-4 3xl:w-4 rounded-full bg-yellow-500/80" />
+                        <div className="h-3 w-3 3xl:h-4 3xl:w-4 rounded-full bg-green-500/80" />
                       </div>
-                      <span className="text-xs font-mono text-text-muted ml-2">n0e9@terminal:~</span>
+                      <span className="text-xs 3xl:text-sm 4xl:text-base font-mono text-text-muted ml-2">n0e9@terminal:~</span>
                     </div>
 
                     {/* Terminal Content */}
-                    <div className="rounded-lg bg-bg-dark/80 p-4 border border-border/30 font-mono text-sm text-text-muted leading-relaxed">
+                    <div className="rounded-lg bg-bg-dark/80 p-4 3xl:p-6 4xl:p-8 border border-border/30 font-mono text-sm 3xl:text-base 4xl:text-lg text-text-muted leading-relaxed">
                       <div className="space-y-2">
                         <div>
                           <span className="text-accent">$</span>{" "}
@@ -111,15 +111,15 @@ export default function Home() {
                         </div>
                         <div className="pl-4 space-y-1">
                           <div className="flex items-center gap-2">
-                            <Shield size={14} className="text-primary" />
+                            <Shield className="text-primary w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                             <span className="text-text-secondary">1. Cybersecurity Solutions</span>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Code size={14} className="text-primary" />
+                            <Code className="text-primary w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                             <span className="text-text-secondary">2. Software Development</span>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Cpu size={14} className="text-primary" />
+                            <Cpu className="text-primary w-3.5 h-3.5 3xl:w-4 3xl:h-4 4xl:w-5 4xl:h-5" />
                             <span className="text-text-secondary">3. IoT & Embedded Systems</span>
                           </div>
                         </div>
@@ -134,16 +134,16 @@ export default function Home() {
                 </div>
 
                 {/* Floating badges */}
-                <div className="absolute -top-4 -left-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float will-change-transform">
+                <div className="absolute -top-4 -left-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 3xl:px-5 3xl:py-3 4xl:px-6 4xl:py-4 shadow-lg animate-float will-change-transform">
                   <div className="flex items-center gap-2">
-                    <ShieldCheck size={16} className="text-accent" />
-                    <span className="text-xs font-semibold text-text-primary">Protected</span>
+                    <ShieldCheck className="text-accent w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+                    <span className="text-xs 3xl:text-sm 4xl:text-base font-semibold text-text-primary">Protected</span>
                   </div>
                 </div>
-                <div className="absolute -bottom-4 -right-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float delay-300 will-change-transform">
+                <div className="absolute -bottom-4 -right-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 3xl:px-5 3xl:py-3 4xl:px-6 4xl:py-4 shadow-lg animate-float delay-300 will-change-transform">
                   <div className="flex items-center gap-2">
-                    <Globe size={16} className="text-primary" />
-                    <span className="text-xs font-semibold text-text-primary">Edge Ready</span>
+                    <Globe className="text-primary w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
+                    <span className="text-xs 3xl:text-sm 4xl:text-base font-semibold text-text-primary">Edge Ready</span>
                   </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function Home() {
           title="Technology Solutions Built for the Real World"
           subtitle="We bring together cybersecurity and full-stack development to help businesses launch, protect, and scale their technology."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           <FeatureCard
             icon={ShieldCheck}
             title="Threat-Resilient Security"
@@ -183,20 +183,20 @@ export default function Home() {
 
       {/* ===== ABOUT PREVIEW ===== */}
       <Section className="bg-bg-card">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 3xl:gap-20 4xl:gap-24 items-center">
           <div>
             <SectionHeader
               label="About Us"
               title="Engineers First. Business-Minded Always."
               align="left"
             />
-            <p className="text-text-secondary leading-relaxed mb-5">
+            <p className="text-text-secondary 3xl:text-lg 4xl:text-xl leading-relaxed mb-5">
               N0E9Tech is a startup founded by developers who believe
               great technology should be accessible to every business. We bring hands-on
               expertise in cybersecurity, embedded systems, and software
               development to every engagement.
             </p>
-            <p className="text-text-secondary leading-relaxed mb-8">
+            <p className="text-text-secondary 3xl:text-lg 4xl:text-xl leading-relaxed mb-8">
               We don&apos;t just advise, we build. From the first line of
               code to production deployment, our team is with you every step
               of the way.
@@ -209,37 +209,37 @@ export default function Home() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-3 text-sm text-text-secondary"
+                  className="flex items-center gap-3 text-sm 3xl:text-base 4xl:text-lg text-text-secondary"
                 >
-                  <CheckCircle size={16} className="text-accent shrink-0" />
+                  <CheckCircle className="text-accent shrink-0 w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
                   {item}
                 </li>
               ))}
             </ul>
             <Button href="/about" variant="secondary">
               Learn More About Us
-              <ArrowRight size={16} />
+              <ArrowRight className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6" />
             </Button>
           </div>
 
           {/* Visual */}
-          <div className="relative rounded-2xl border border-border bg-linear-to-br from-primary/5 via-bg-dark to-accent/5 p-8 lg:p-12">
+          <div className="relative rounded-2xl border border-border bg-linear-to-br from-primary/5 via-bg-dark to-accent/5 p-8 lg:p-12 3xl:p-14 4xl:p-16">
             <div className="absolute inset-0 rounded-2xl bg-dot-pattern opacity-30" />
-            <div className="relative grid grid-cols-2 gap-4">
-              <div className="rounded-xl bg-bg-card border border-border p-5 text-center">
-                <Shield size={28} className="text-primary mx-auto mb-2" />
-                <p className="text-lg font-bold text-text-primary">Security</p>
-                <p className="text-xs text-text-muted">Offense-Informed</p>
+            <div className="relative grid grid-cols-2 gap-4 3xl:gap-6 4xl:gap-8">
+              <div className="rounded-xl bg-bg-card border border-border p-5 3xl:p-6 4xl:p-8 text-center">
+                <Shield className="text-primary mx-auto mb-2 w-7 h-7 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
+                <p className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary">Security</p>
+                <p className="text-xs 3xl:text-sm 4xl:text-base text-text-muted">Offense-Informed</p>
               </div>
-              <div className="rounded-xl bg-bg-card border border-border p-5 text-center">
-                <Cpu size={28} className="text-accent mx-auto mb-2" />
-                <p className="text-lg font-bold text-text-primary">IoT</p>
-                <p className="text-xs text-text-muted">Embedded System</p>
+              <div className="rounded-xl bg-bg-card border border-border p-5 3xl:p-6 4xl:p-8 text-center">
+                <Cpu className="text-accent mx-auto mb-2 w-7 h-7 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
+                <p className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary">IoT</p>
+                <p className="text-xs 3xl:text-sm 4xl:text-base text-text-muted">Embedded System</p>
               </div>
-              <div className="rounded-xl bg-bg-card border border-border p-5 text-center">
-                <Code size={28} className="text-primary mx-auto mb-2" />
-                <p className="text-lg font-bold text-text-primary">Software</p>
-                <p className="text-xs text-text-muted">Web & App</p>
+              <div className="rounded-xl bg-bg-card border border-border p-5 3xl:p-6 4xl:p-8 text-center">
+                <Code className="text-primary mx-auto mb-2 w-7 h-7 3xl:w-9 3xl:h-9 4xl:w-10 4xl:h-10" />
+                <p className="text-lg 3xl:text-xl 4xl:text-2xl font-bold text-text-primary">Software</p>
+                <p className="text-xs 3xl:text-sm 4xl:text-base text-text-muted">Web & App</p>
               </div>
             </div>
           </div>
@@ -253,7 +253,7 @@ export default function Home() {
           title="Three Pillars. One Mission. Your Growth."
           subtitle="Whether you need to secure your infrastructure, prototype an IoT device, launch a digital product, or modernize your IT — we’re ready to build."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           <ServiceCard
             icon={Shield}
             title="Cybersecurity Solutions"
@@ -281,7 +281,7 @@ export default function Home() {
           label="Insights"
           title="From Our Blog"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           {/* PLACEHOLDER: Dummy blog cards */}
           <BlogCard
             title="Why Every Startup Needs a Security Mindset from Day One"
@@ -330,7 +330,7 @@ export default function Home() {
       {/* ===== CONTACT PREVIEW ===== */}
       <Section>
         <SectionHeader label="Get in Touch" title="Contact Us" />
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 3xl:gap-8 4xl:gap-10 max-w-3xl 3xl:max-w-4xl 4xl:max-w-5xl mx-auto">
           {[
             {
               icon: Mail,
@@ -352,21 +352,21 @@ export default function Home() {
           ].map((item) => (
             <div
               key={item.label}
-              className="group text-center rounded-xl border border-border bg-bg-card p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(14,165,233,0.06)]"
+              className="group text-center rounded-xl border border-border bg-bg-card p-6 3xl:p-8 4xl:p-10 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(14,165,233,0.06)]"
             >
-              <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 transition-all group-hover:ring-primary/40">
-                <item.icon size={22} className="text-primary" />
+              <div className="mb-3 inline-flex h-12 w-12 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 transition-all group-hover:ring-primary/40">
+                <item.icon className="text-primary w-5 h-5 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7" />
               </div>
-              <p className="text-sm font-medium text-text-primary mb-1">{item.label}</p>
+              <p className="text-sm 3xl:text-base 4xl:text-lg font-medium text-text-primary mb-1">{item.label}</p>
               {item.href ? (
                 <a
                   href={item.href}
-                  className="text-sm text-text-secondary hover:text-primary transition-colors"
+                  className="text-sm 3xl:text-base 4xl:text-lg text-text-secondary hover:text-primary transition-colors"
                 >
                   {item.value}
                 </a>
               ) : (
-                <p className="text-sm text-text-secondary">{item.value}</p>
+                <p className="text-sm 3xl:text-base 4xl:text-lg text-text-secondary">{item.value}</p>
               )}
             </div>
           ))}

@@ -186,6 +186,19 @@
   background-size: 40px 40px;
 }
 
+/* Scale grid pattern on large screens */
+@media (min-width: 1920px) {
+  .bg-grid-pattern {
+    background-size: 50px 50px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .bg-grid-pattern {
+    background-size: 60px 60px;
+  }
+}
+
 .bg-dot-pattern {
   background-image: radial-gradient(
     circle,
@@ -193,6 +206,19 @@
     transparent 1px
   );
   background-size: 24px 24px;
+}
+
+/* Scale dot pattern on large screens */
+@media (min-width: 1920px) {
+  .bg-dot-pattern {
+    background-size: 30px 30px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .bg-dot-pattern {
+    background-size: 36px 36px;
+  }
 }
 
 .bg-radial-glow {

@@ -65,8 +65,8 @@ export default function AboutPage() {
           label="Mission & Vision"
           title="What Drives Us Forward"
         />
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
-          <div className="group rounded-xl border border-border bg-bg-dark p-8 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_rgba(14,165,233,0.06)]">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12 max-w-4xl 3xl:max-w-5xl 4xl:max-w-6xl mx-auto">
+          <div className="group rounded-xl border border-border bg-bg-dark p-8 3xl:p-10 4xl:p-12 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_rgba(14,165,233,0.06)]">
             <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/20">
               <CheckCircle size={20} className="text-primary" />
             </div>
@@ -78,7 +78,7 @@ export default function AboutPage() {
                
             </p>
           </div>
-          <div className="group rounded-xl border border-border bg-bg-dark p-8 transition-all duration-300 hover:border-accent/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.06)]">
+          <div className="group rounded-xl border border-border bg-bg-dark p-8 3xl:p-10 4xl:p-12 transition-all duration-300 hover:border-accent/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.06)]">
             <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 ring-1 ring-accent/20">
               <Lightbulb size={20} className="text-accent" />
             </div>
@@ -98,11 +98,11 @@ export default function AboutPage() {
           label="Our Values"
           title="Principles That Guide Every Decision"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           {values.map((value, index) => (
             <div
               key={value.title}
-              className={`card-glow group rounded-xl border border-border bg-bg-card p-6 lg:p-8 transition-all duration-300 hover:border-primary/30 animate-fade-in-up delay-${(index + 1) * 100}`}
+              className={`card-glow group rounded-xl border border-border bg-bg-card p-6 lg:p-8 3xl:p-10 4xl:p-12 transition-all duration-300 hover:border-primary/30 animate-fade-in-up delay-${(index + 1) * 100}`}
             >
               <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/40">
                 <value.icon size={22} className="text-primary" />
@@ -125,11 +125,11 @@ export default function AboutPage() {
           title="Small Team. Big Capabilities."
           subtitle="We're a lean, multidisciplinary team of developers who cover cybersecurity , software development. We're growing , reach out if you'd like to join us."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           {team.map((member, index) => (
             <div
               key={member.name}
-              className={`card-glow group rounded-xl border border-border bg-bg-dark p-6 lg:p-8 transition-all duration-300 hover:border-primary/30 animate-fade-in-up delay-${(index + 1) * 100}`}
+              className={`card-glow group rounded-xl border border-border bg-bg-dark p-6 lg:p-8 3xl:p-10 4xl:p-12 transition-all duration-300 hover:border-primary/30 animate-fade-in-up delay-${(index + 1) * 100}`}
             >
               {/* Avatar */}
               <div className="mb-5 flex items-center gap-4">
