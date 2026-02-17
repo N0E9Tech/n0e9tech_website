@@ -7,7 +7,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  Clock,
   CheckCircle,
   Send,
   ArrowRight,
@@ -35,7 +34,6 @@ const contactInfo = [
     href: undefined,
     description: `${COMPANY.country}`,
   },
-  
 ];
 
 export default function ContactPage() {
@@ -52,7 +50,7 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    >,
   ) => {
     const target = e.target;
     const value =
@@ -219,7 +217,10 @@ export default function ContactPage() {
                       htmlFor="phone"
                       className="block text-sm font-medium text-text-primary mb-2"
                     >
-                      Phone <span className="text-text-muted font-normal">(Optional)</span>
+                      Phone{" "}
+                      <span className="text-text-muted font-normal">
+                        (Optional)
+                      </span>
                     </label>
                     <input
                       type="tel"
@@ -320,7 +321,8 @@ export default function ContactPage() {
               </h3>
               <p className="text-sm text-text-secondary leading-relaxed mb-4">
                 Sometimes a 15-minute conversation is worth more than a hundred
-                emails. You&apos;ll talk directly with our founder — no gatekeepers.
+                emails. You&apos;ll talk directly with our founder — no
+                gatekeepers.
               </p>
               <Button href="#" variant="secondary" size="sm">
                 Schedule a Call
@@ -350,8 +352,6 @@ export default function ContactPage() {
                 ))}
               </ul>
             </div>
-
-            
           </div>
         </div>
       </Section>
