@@ -1,16 +1,15 @@
 "use client";
 
+import { ArrowRight, Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect, useRef } from "react";
-import { Menu, X, ArrowRight } from "lucide-react";
-import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  // { href: "/projects", label: "Projects" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
@@ -39,9 +38,7 @@ export function Navbar() {
   }, []);
 
   // Close mobile menu on route change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+  useEffect(() => {}, [pathname]);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -80,7 +77,7 @@ export function Navbar() {
             className="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
             aria-label="N0E9Tech — Home"
           >
-             <div className="flex items-center justify-center transition-all duration-300 group-hover:bg-primary/15">
+            <div className="flex items-center justify-center transition-all duration-300 group-hover:bg-primary/15">
               <Image
                 src="/logo.png"
                 alt="N0E9Tech Logo"

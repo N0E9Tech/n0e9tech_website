@@ -33,13 +33,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-pattern opacity-40" />
         <div className="absolute inset-0 bg-radial-glow" />
 
-        {/* Decorative orbs */}
-        <div className="absolute top-1/4 -left-32 h-125 w-500 rounded-full bg-primary/0.04 blur-3xl" />
-        <div className="absolute bottom-1/4 -right-32 h-400 w-400 rounded-full bg-accent/0.03 blur-3xl" />
-        <div className="absolute top-20 right-1/4 h-2 w-2 rounded-full bg-primary/40 animate-float will-change-transform" />
-        <div className="absolute bottom-40 left-1/3 h-1.5 w-1.5 rounded-full bg-accent/40 animate-float delay-300 will-change-transform" />
-        <div className="absolute top-1/3 right-1/3 h-1 w-1 rounded-full bg-primary/30 animate-float delay-600 will-change-transform" />
-
         <div className="relative mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-20 lg:py-0 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left — Content */}
@@ -57,9 +50,9 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 text-lg text-text-secondary leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                We&apos;re a startup team passionate about
-                cybersecurity, IoT, and modern software. Whether you need a
-                security assessment or a secure web app, we build it right from day one.
+                We&apos;re a startup team passionate about cybersecurity, IoT,
+                and modern software. Whether you need a security assessment or a
+                secure web app, we build it right from day one.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
@@ -99,7 +92,9 @@ export default function Home() {
                         <div className="h-3 w-3 rounded-full bg-yellow-500/80" />
                         <div className="h-3 w-3 rounded-full bg-green-500/80" />
                       </div>
-                      <span className="text-xs font-mono text-text-muted ml-2">n0e9@terminal:~</span>
+                      <span className="text-xs font-mono text-text-muted ml-2">
+                        n0e9@terminal:~
+                      </span>
                     </div>
 
                     {/* Terminal Content */}
@@ -107,20 +102,28 @@ export default function Home() {
                       <div className="space-y-2">
                         <div>
                           <span className="text-accent">$</span>{" "}
-                          <span className="text-text-primary">echo list services</span>
+                          <span className="text-text-primary">
+                            echo list services
+                          </span>
                         </div>
                         <div className="pl-4 space-y-1">
                           <div className="flex items-center gap-2">
                             <Shield size={14} className="text-primary" />
-                            <span className="text-text-secondary">1. Cybersecurity Solutions</span>
+                            <span className="text-text-secondary">
+                              1. Cybersecurity Solutions
+                            </span>
                           </div>
                           <div className="flex items-center gap-2">
                             <Code size={14} className="text-primary" />
-                            <span className="text-text-secondary">2. Software Development</span>
+                            <span className="text-text-secondary">
+                              2. Software Development
+                            </span>
                           </div>
                           <div className="flex items-center gap-2">
                             <Cpu size={14} className="text-primary" />
-                            <span className="text-text-secondary">3. IoT & Embedded Systems</span>
+                            <span className="text-text-secondary">
+                              3. IoT & Embedded Systems
+                            </span>
                           </div>
                         </div>
                         <div className="mt-3">
@@ -129,7 +132,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
 
@@ -137,13 +139,17 @@ export default function Home() {
                 <div className="absolute -top-4 -left-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float will-change-transform">
                   <div className="flex items-center gap-2">
                     <ShieldCheck size={16} className="text-accent" />
-                    <span className="text-xs font-semibold text-text-primary">Protected</span>
+                    <span className="text-xs font-semibold text-text-primary">
+                      Protected
+                    </span>
                   </div>
                 </div>
                 <div className="absolute -bottom-4 -right-4 rounded-xl border border-border bg-bg-card px-4 py-2.5 shadow-lg animate-float delay-300 will-change-transform">
                   <div className="flex items-center gap-2">
                     <Globe size={16} className="text-primary" />
-                    <span className="text-xs font-semibold text-text-primary">Edge Ready</span>
+                    <span className="text-xs font-semibold text-text-primary">
+                      Edge Ready
+                    </span>
                   </div>
                 </div>
               </div>
@@ -191,15 +197,15 @@ export default function Home() {
               align="left"
             />
             <p className="text-text-secondary leading-relaxed mb-5">
-              N0E9Tech is a startup founded by developers who believe
-              great technology should be accessible to every business. We bring hands-on
-              expertise in cybersecurity, embedded systems, and software
-              development to every engagement.
+              N0E9Tech is a startup founded by developers who believe great
+              technology should be accessible to every business. We bring
+              hands-on expertise in cybersecurity, embedded systems, and
+              software development to every engagement.
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
-              We don&apos;t just advise, we build. From the first line of
-              code to production deployment, our team is with you every step
-              of the way.
+              We don&apos;t just advise, we build. From the first line of code
+              to production deployment, our team is with you every step of the
+              way.
             </p>
             <ul className="space-y-3 mb-8">
               {[
@@ -277,10 +283,7 @@ export default function Home() {
 
       {/* ===== BLOG PREVIEW ===== */}
       <Section>
-        <SectionHeader
-          label="Insights"
-          title="From Our Blog"
-        />
+        <SectionHeader label="Insights" title="From Our Blog" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* PLACEHOLDER: Dummy blog cards */}
           <BlogCard
@@ -357,7 +360,9 @@ export default function Home() {
               <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 transition-all group-hover:ring-primary/40">
                 <item.icon size={22} className="text-primary" />
               </div>
-              <p className="text-sm font-medium text-text-primary mb-1">{item.label}</p>
+              <p className="text-sm font-medium text-text-primary mb-1">
+                {item.label}
+              </p>
               {item.href ? (
                 <a
                   href={item.href}
@@ -375,6 +380,3 @@ export default function Home() {
     </>
   );
 }
-
-
-
