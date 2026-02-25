@@ -8,7 +8,6 @@ export const siteConfig = {
   url: "https://n0e9tech.com",
   ogImage: "/logo.png",
   links: {
-    twitter: "https://twitter.com/n0e9tech",
     github: "https://github.com/yn0e9tech",
     linkedin: "https://linkedin.com/company/n0e9tech",
   },
@@ -17,9 +16,7 @@ export const siteConfig = {
     "IoT solutions",
     "web development",
     "Raspberry Pi",
-    "network security",
     "embedded systems",
-    "Next.js development",
   ] as string[],
 };
 
